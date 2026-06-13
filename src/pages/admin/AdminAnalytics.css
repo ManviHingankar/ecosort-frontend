@@ -1,0 +1,161 @@
+.admin-analytics{
+width:92%;
+margin:40px auto;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.admin-analytics h1{
+text-align:center;
+margin-bottom:35px;
+font-size:34px;
+color:#2c3e50;
+}
+
+/* STAT CARDS */
+
+.analytics-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-bottom:40px;
+}
+
+.analytics-card{
+background:white;
+padding:30px;
+border-radius:14px;
+box-shadow:0 6px 16px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
+}
+
+.analytics-card:hover{
+transform:translateY(-5px);
+}
+
+.analytics-card h2{
+font-size:36px;
+color:#1e7d4f;
+margin-bottom:10px;
+}
+
+.analytics-card p{
+font-size:16px;
+color:#555;
+}
+
+/* SECTIONS */
+
+.analytics-section{
+margin-top:50px;
+}
+
+.analytics-section h2{
+margin-bottom:20px;
+color:#2c3e50;
+}
+
+/* STATUS */
+
+.status-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.status-card{
+padding:25px;
+border-radius:12px;
+color:white;
+text-align:center;
+font-weight:500;
+}
+
+.pending{background:#f39c12;}
+.accepted{background:#3498db;}
+.progress{background:#8e44ad;}
+.completed{background:#27ae60;}
+
+.status-card h3{
+font-size:28px;
+margin-bottom:5px;
+}
+
+/* DEVICE GRID */
+
+.device-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.device-card{
+background:white;
+padding:25px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.device-card h3{
+font-size:28px;
+color:#1e7d4f;
+margin-bottom:5px;
+}
+
+/* TABLE */
+
+.analytics-table{
+width:100%;
+border-collapse:collapse;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.analytics-table th{
+background:#1e7d4f;
+color:white;
+padding:14px;
+text-align:left;
+}
+
+.analytics-table td{
+padding:14px;
+border-bottom:1px solid #eee;
+}
+
+.analytics-table tr:hover{
+background:#f6f6f6;
+}
+
+/* MOBILE FIX */
+@media (max-width:768px){
+
+  .admin-analytics{
+    width:95%;
+    margin:20px auto;
+  }
+
+  .analytics-cards{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .analytics-card{
+    padding:20px;
+  }
+
+  .analytics-card h2{
+    font-size:24px;
+  }
+
+  .status-grid{
+    grid-template-columns:1fr;
+  }
+
+  .device-grid{
+    grid-template-columns:1fr;
+  }
+
+}

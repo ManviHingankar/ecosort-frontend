@@ -1,0 +1,141 @@
+.recycler-dashboard{
+  padding:40px 60px;
+  background:#f4f7f6;
+  min-height:100vh;
+}
+
+/* HEADER */
+
+.dashboard-header h1{
+  font-size:34px;
+  font-weight:700;
+  margin-bottom:8px;
+  text-align:center;
+}
+
+.dashboard-header p{
+  color:#666;
+  margin-bottom:40px;
+  text-align:center;
+}
+
+/* STATS GRID */
+
+.recycler-stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+  justify-items:center;   /* ✅ centers cards properly */
+  margin-bottom:40px;
+}
+
+/* CARD */
+
+.stat-card{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:28px 20px;
+  border-radius:16px;
+  background:white;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  transition:0.25s;
+  min-width:0;
+  width:100%;
+  max-width:260px;   /* ✅ perfect compact size */
+}
+
+.stat-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* ICON */
+
+.stat-icon{
+  font-size:24px;
+  background:#ecf7f2;
+  padding:12px;
+  border-radius:10px;
+}
+
+/* TEXT */
+
+.stat-card h3{
+  font-size:13px;
+  color:#777;
+  margin-bottom:3px;
+}
+
+.stat-card h2{
+  font-size:24px;
+  font-weight:600;
+  color:#138a63;
+  word-break:break-word;
+}
+
+/* COLORS */
+
+.pending{ border-left:5px solid #f39c12; }
+.assigned{ border-left:5px solid #3498db; }
+.collected{ border-left:5px solid #2ecc71; }
+.earnings{ border-left:5px solid #27ae60; }
+
+/* CONTENT SECTION */
+
+.dashboard-content{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:25px;
+  margin-top:20px;
+}
+
+.eco-info{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  .recycler-dashboard{
+    padding:20px;
+  }
+
+  .dashboard-header h1{
+    font-size:24px;
+  }
+
+  .dashboard-header p{
+    font-size:14px;
+  }
+
+  /* FULL WIDTH CARDS */
+  .recycler-stats{
+    grid-template-columns:1fr;
+  }
+
+  .stat-card{
+    max-width:100%;
+    width:100%;
+    padding:18px;
+  }
+
+  .stat-icon{
+    font-size:22px;
+    padding:10px;
+  }
+
+  .stat-card h2{
+    font-size:22px;
+  }
+
+  /* STACK CONTENT */
+  .dashboard-content{
+    grid-template-columns:1fr;
+  }
+
+}

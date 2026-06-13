@@ -1,0 +1,127 @@
+.earnings-page{
+  padding:40px 80px;
+  background:#f5f7f6;
+  min-height:100vh;
+}
+
+/* TITLE */
+
+.earnings-page h1{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:30px;
+}
+
+/* CARDS */
+
+.earnings-cards{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
+
+.earn-card{
+  background:white;
+  padding:25px;
+  border-radius:14px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  text-align:center;
+  width:220px;
+}
+
+.earn-card h3{
+  font-size:28px;
+  color:#1e7d4f;
+}
+
+.earn-card p{
+  font-size:14px;
+  color:#555;
+}
+
+/* TABLE */
+
+.earnings-table{
+  width:100%;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.earnings-table th{
+  background:#1e7d4f;
+  color:white;
+  padding:14px;
+}
+
+.earnings-table td{
+  padding:14px;
+  text-align:center;
+  border-bottom:1px solid #eee;
+}
+
+/* SUMMARY */
+
+.earnings-summary{
+  margin-top:20px;
+  padding:20px;
+  background:white;
+  border-radius:12px;
+  width:300px;
+}
+
+.net{
+  font-weight:bold;
+  color:#1e7d4f;
+}
+
+/* VIEW CONTROL */
+
+.desktop-view{ display:block; }
+.mobile-view{ display:none; }
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  .earnings-page{
+    padding:20px;
+  }
+
+  .earnings-page h1{
+    font-size:24px;
+  }
+
+  .desktop-view{ display:none; }
+  .mobile-view{ display:block; }
+
+  .earnings-list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .earn-item{
+    background:white;
+    padding:14px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+  }
+
+  .earn-item h3{
+    font-size:16px;
+  }
+
+  .earn-item p{
+    font-size:13px;
+    margin:3px 0;
+  }
+
+  .earnings-summary{
+    width:100%;
+  }
+
+}

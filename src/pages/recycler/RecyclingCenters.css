@@ -1,0 +1,140 @@
+.recycling-page{
+  padding:40px 60px;
+  background:#f6f8f7;
+  min-height:100vh;
+}
+
+.recycling-page h1{
+  text-align:center;
+  font-size:32px;
+  font-weight:700;
+  margin-bottom:8px;
+}
+
+.recycling-page p{
+  text-align:center;
+  color:#666;
+  margin-bottom:30px;
+  font-size:15px;
+}
+
+/* GRID */
+
+.centers-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:25px;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* CARD */
+
+.center-card{
+  background:white;
+  padding:22px;
+  border-radius:16px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+  transition:0.25s;
+}
+
+.center-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* TITLE */
+
+.center-card h3{
+  text-align:center;
+  color:#1e7d4f;
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+/* DETAILS */
+
+.center-card p{
+  font-size:14px;
+  color:#444;
+  line-height:1.7;
+  margin:6px 0;
+  word-break:break-word;
+}
+
+/* BUTTON */
+
+.center-card a{
+  display:block;
+  width:150px;
+  margin:18px auto 0 auto;
+  background:#1e7d4f;
+  color:white;
+  padding:10px;
+  border-radius:10px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+  text-align:center;
+  transition:0.25s;
+}
+
+.center-card a:hover{
+  background:#16643f;
+}
+
+/* BADGE */
+
+.center-card::before{
+  content:"Recycling Center";
+  display:block;
+  width:140px;
+  margin:0 auto 10px auto;
+  background:#e8f5e9;
+  color:#1e7d4f;
+  font-size:11px;
+  padding:5px;
+  border-radius:8px;
+  text-align:center;
+  font-weight:600;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  .recycling-page{
+    padding:20px;
+  }
+
+  .recycling-page h1{
+    font-size:24px;
+  }
+
+  .recycling-page p{
+    font-size:14px;
+  }
+
+  .centers-container{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .center-card{
+    padding:18px;
+  }
+
+  .center-card h3{
+    font-size:16px;
+  }
+
+  .center-card p{
+    font-size:13px;
+  }
+
+  .center-card a{
+    width:100%;
+    font-size:14px;
+  }
+
+}

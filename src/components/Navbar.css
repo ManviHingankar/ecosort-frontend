@@ -1,0 +1,258 @@
+/* HEADER BACKGROUND */
+
+.header{
+background:#f4f7f5;
+padding:16px 20px;
+}
+
+/* NAVBAR CONTAINER */
+
+.navbar{
+max-width:1350px;
+margin:auto;
+background:#dbe9df;
+border-radius:40px;
+height:80px;
+padding:0 30px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+box-shadow:0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+
+.logo-container{
+display:flex;
+align-items:center;
+}
+
+.brand-logo{
+height:65px;
+object-fit:contain;
+}
+
+/* MENU */
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:26px;
+flex-wrap:nowrap;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#1c1c1c;
+font-size:16px;
+font-weight:600;
+position:relative;
+transition:0.25s;
+}
+
+.nav-links a:hover{
+color:#0a7d5e;
+}
+
+.nav-links a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0%;
+height:3px;
+background:#0a7d5e;
+border-radius:4px;
+transition:0.35s;
+}
+
+.nav-links a.active{
+color:#0a7d5e;
+}
+
+.nav-links a.active::after{
+width:100%;
+}
+
+/* FAQ BUTTON */
+
+.faq-link{
+background:none;
+border:none;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+color:#1c1c1c;
+font-family:inherit;
+}
+
+.faq-link:hover{
+color:#0a7d5e;
+}
+
+/* AUTH BUTTON CONTAINER */
+
+.auth{
+display:flex;
+align-items:center;
+gap:8px;
+background:#cfe3d2;
+padding:6px;
+border-radius:40px;
+flex-shrink:0;
+}
+
+/* BUTTON STYLE */
+
+.auth a{
+text-decoration:none;
+padding:10px 22px;
+font-size:15px;
+font-weight:600;
+border-radius:30px;
+transition:0.3s;
+white-space:nowrap;
+}
+
+/* REGISTER */
+
+.register{
+background:#e9f4ed;
+color:#138a63;
+}
+
+/* LOGIN */
+
+.login{
+background:#138a63;
+color:white;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* HOVER */
+
+.register:hover{
+background:#dff0e7;
+}
+
+.login:hover{
+background:#0f7c57;
+transform:translateY(-1px);
+}
+
+/* HAMBURGER */
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+/* MOBILE */
+/* MOBILE AUTH (default hidden) */
+.mobile-auth{
+  display:none;
+  flex-direction:column;
+  width:100%;
+  gap:10px;
+  margin-top:10px;
+}
+
+.mobile-auth a{
+  width:100%;
+  text-align:center;
+  padding:10px;
+  border-radius:8px;
+}
+
+
+/* MOBILE */
+@media (max-width:768px){
+
+  .navbar{
+    padding:0 15px;
+    height:70px;
+  }
+
+  .brand-logo{
+    height:55px;
+  }
+
+  /* SHOW HAMBURGER */
+  .menu-toggle{
+    display:block;
+  }
+
+  /* MOBILE MENU */
+  .nav-links{
+    position:absolute;
+    top:75px;
+    right:15px;
+    width:240px;
+    background:#ffffff;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+    padding:15px;
+    display:none;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    z-index:1001;
+  }
+
+  /* SHOW MENU */
+  .nav-links.open{
+    display:flex;
+  }
+
+  /* LINKS */
+  .nav-links a,
+  .faq-link{
+    width:100%;
+    text-align:left;
+    padding:8px 10px;
+  }
+
+  /* HIDE DESKTOP BUTTONS */
+  .auth{
+    display:none;
+  }
+
+  /* ✅ SHOW LOGIN / REGISTER */
+  .mobile-auth{
+    display:flex;
+  }
+
+  .mobile-auth .register{
+    background:#138a63 !important;
+    color:#ffffff !important;
+    opacity:1 !important;
+  }
+
+  .mobile-auth .login{
+    background:#138a63;
+    color:white;
+  }
+
+}
+
+/* NAVBAR FIX */
+.navbar{
+  position:relative;
+  z-index:1000;
+}
+
+.mobile-auth a{
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* REMOVE DARK EFFECT ON CLICK */
+.mobile-auth .login:active,
+.mobile-auth .login:focus,
+.mobile-auth .login:visited{
+  background:#138a63 !important;
+  color:#ffffff !important;
+  outline:none;
+  box-shadow:none;
+}

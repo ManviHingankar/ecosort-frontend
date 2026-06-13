@@ -1,0 +1,165 @@
+/* ================= GLOBAL FIX ================= */
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  overflow-x:hidden;   /* 🔥 stops right scroll */
+}
+
+/* ================= MAIN ================= */
+
+.admin-dashboard{
+  padding:30px;
+  background:#f5f7f6;
+  min-height:100vh;
+  width:100%;
+  max-width:100%;
+}
+
+.admin-title{
+  text-align:center;
+  margin-bottom:25px;
+  font-size:28px;
+}
+
+/* ================= STATS ================= */
+
+.admin-stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:15px;
+  margin-bottom:25px;
+  width:100%;
+}
+
+.admin-card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  text-align:center;
+
+  min-height:130px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+  transition:0.2s;
+}
+
+.admin-card:hover{
+  transform:translateY(-3px);
+}
+
+.admin-card h3{
+  font-size:15px;
+  margin-bottom:6px;
+  color:#555;
+}
+
+.admin-card p{
+  font-size:22px;
+  color:#1e6f43;
+  font-weight:600;
+}
+
+/* ================= GRID ================= */
+
+.admin-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  width:100%;
+}
+
+/* ================= SECTION ================= */
+
+.admin-section{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  width:100%;
+  overflow:hidden;   /* 🔥 prevents overflow */
+}
+
+.admin-section h2{
+  margin-bottom:12px;
+  font-size:18px;
+}
+
+/* ================= TABLE ================= */
+
+.table-wrapper{
+  width:100%;
+  overflow-x:auto;   /* ✅ scroll inside only */
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:450px;   /* 🔥 reduced from 500 */
+}
+
+th,td{
+  padding:10px;
+  border-bottom:1px solid #ddd;
+  text-align:left;
+  font-size:13px;
+}
+
+/* ================= BUTTON ================= */
+
+.approve-btn{
+  background:#1e7d4f;
+  color:white;
+  border:none;
+  padding:6px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:12px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+  .admin-dashboard{
+    padding:15px;
+  }
+
+  .admin-title{
+    font-size:22px;
+  }
+
+  /* ✅ PERFECT GRID */
+  .admin-stats{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .admin-card{
+    min-height:110px;
+    padding:15px;
+  }
+
+  .admin-card h3{
+    font-size:13px;
+  }
+
+  .admin-card p{
+    font-size:18px;
+  }
+
+  /* ✅ STACK */
+  .admin-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* EXTRA SAFETY */
+  .admin-section{
+    overflow:hidden;
+  }
+
+}

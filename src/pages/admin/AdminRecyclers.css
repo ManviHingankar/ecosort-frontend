@@ -1,0 +1,146 @@
+/* PAGE LAYOUT */
+
+.admin-recyclers{
+width:90%;
+margin:40px auto;
+}
+
+.admin-recyclers h1{
+text-align:center;
+margin-bottom:30px;
+font-size:32px;
+font-weight:600;
+color:#2c3e50;
+}
+
+
+/* TABLE */
+
+.recycler-table{
+width:100%;
+border-collapse:collapse;
+background:#ffffff;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+/* HEADER */
+
+.recycler-table thead{
+background:#1e7d4f;
+color:white;
+}
+
+.recycler-table th{
+padding:16px;
+font-weight:600;
+text-align:left;
+}
+
+
+/* ROWS */
+
+.recycler-table td{
+padding:14px 16px;
+border-bottom:1px solid #f0f0f0;
+vertical-align:middle;
+}
+
+.recycler-table tbody tr:nth-child(even){
+background:#f7f7f7;
+}
+
+.recycler-table tbody tr:hover{
+background:#eef7f1;
+transition:0.2s;
+}
+
+
+/* STATUS */
+
+.status-approved{
+color:#1e7d4f;
+font-weight:600;
+}
+
+.status-pending{
+color:#e67e22;
+font-weight:600;
+}
+
+
+/* AREA COLUMN */
+
+.area-cell{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+
+/* DROPDOWN */
+
+.area-select{
+padding:6px 10px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+background:white;
+cursor:pointer;
+transition:0.2s;
+}
+
+.area-select:focus{
+outline:none;
+border-color:#1e7d4f;
+}
+
+
+/* ASSIGN BUTTON */
+
+.assign-btn{
+background:#1e7d4f;
+color:white;
+border:none;
+padding:6px 14px;
+border-radius:6px;
+font-size:13px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.assign-btn:hover{
+background:#16643e;
+}
+
+
+/* APPROVE BUTTON */
+
+.approve-btn{
+background:#1e7d4f;
+color:white;
+border:none;
+padding:7px 16px;
+border-radius:6px;
+cursor:pointer;
+font-size:14px;
+transition:0.2s;
+}
+
+.approve-btn:hover{
+background:#16643e;
+}
+
+
+/* APPROVED TEXT */
+
+.approved-text{
+color:#1e7d4f;
+font-weight:600;
+}
+
+.table-wrapper{
+  overflow-x:auto;
+}

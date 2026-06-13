@@ -1,0 +1,100 @@
+.services-page{
+background:#f5f9f7;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* HERO */
+
+.services-hero{
+text-align:center;
+padding:40px 20px;
+}
+
+.services-hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.services-hero p{
+max-width:700px;
+margin:auto;
+color:#555;
+font-size:18px;
+}
+
+
+/* WHAT WE ACCEPT */
+
+.accept-section{
+padding:70px 20px;
+text-align:center;
+}
+
+.accept-section h2{
+margin-bottom:40px;
+color:#1b7a5c;
+}
+
+.accept-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+max-width:1000px;
+margin:auto;
+}
+
+.accept-card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+
+/* PICKUP */
+
+.pickup-section{
+padding:70px 20px;
+text-align:center;
+background:#e8f4ef;
+}
+
+.pickup-section h2{
+color:#1b7a5c;
+margin-bottom:20px;
+}
+
+.pickup-section p{
+max-width:700px;
+margin:auto;
+color:#555;
+}
+
+
+/* PROCESS */
+
+.process-section{
+padding:70px 20px;
+text-align:center;
+}
+
+.process-section h2{
+color:#1b7a5c;
+margin-bottom:40px;
+}
+
+.process-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+max-width:900px;
+margin:auto;
+}
+
+.process-card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}

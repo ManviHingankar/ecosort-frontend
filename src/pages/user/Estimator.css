@@ -1,0 +1,155 @@
+.estimator-page{
+background:#f6f8fa;
+min-height:100vh;
+padding-bottom:50px;
+}
+
+.estimator-title{
+text-align:center;
+margin:45px 0;
+font-size:34px;
+font-weight:700;
+color:#1f2937;
+}
+
+/* LAYOUT */
+
+.estimator-container{
+width:80%;
+margin:auto;
+display:flex;
+gap:35px;
+justify-content:center;
+align-items:flex-start;
+}
+
+/* FORM CARD */
+
+.estimator-card{
+background:white;
+padding:35px;
+border-radius:14px;
+width:420px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.estimator-card h2{
+margin-bottom:22px;
+color:#374151;
+font-size:20px;
+}
+
+.estimator-card label{
+display:block;
+margin-top:14px;
+margin-bottom:6px;
+font-size:14px;
+color:#4b5563;
+}
+
+.estimator-card select,
+.estimator-card input{
+width:100%;
+padding:11px;
+border:1px solid #d1d5db;
+border-radius:8px;
+font-size:14px;
+transition:0.2s;
+}
+
+.estimator-card select:focus,
+.estimator-card input:focus{
+outline:none;
+border-color:#16a34a;
+}
+
+/* BUTTON */
+
+.estimator-card button{
+margin-top:22px;
+width:100%;
+padding:13px;
+background:#16a34a;
+border:none;
+color:white;
+border-radius:10px;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+transition:0.25s;
+}
+
+.estimator-card button:hover{
+background:#15803d;
+}
+
+/* RESULT CARD */
+
+.result-card{
+background:white;
+padding:35px;
+border-radius:14px;
+width:420px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.result-card h2{
+margin-bottom:20px;
+color:#374151;
+font-size:20px;
+}
+
+.result-box{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+/* RESULT ITEMS */
+
+.result-item{
+background:#f9fafb;
+padding:18px;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.result-item h4{
+font-size:14px;
+color:#6b7280;
+}
+
+.result-item p{
+font-size:20px;
+font-weight:700;
+color:#16a34a;
+}
+
+.result-card{
+margin-top:25px;
+}
+
+@media (max-width:768px){
+
+  /* STACK LAYOUT */
+  .estimator-container{
+    flex-direction:column;
+    width:95%;
+    gap:20px;
+  }
+
+  /* FULL WIDTH CARDS */
+  .estimator-card,
+  .result-card{
+    width:100%;
+    padding:20px;
+  }
+
+  /* TEXT FIX */
+  .estimator-title{
+    font-size:26px;
+  }
+
+}

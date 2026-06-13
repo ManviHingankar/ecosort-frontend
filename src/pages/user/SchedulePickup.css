@@ -1,0 +1,336 @@
+.pickup-page {
+    background: #f4fbf8;
+    padding-bottom: 40px;
+}
+
+.pickup-wrapper {
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 520px;
+    gap: 60px;
+    align-items: start;
+}
+
+/* LEFT SIDE */
+
+.pickup-left h1 {
+    color: #1e8c5a;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.pickup-left p {
+    color: #555;
+    line-height: 1.6;
+    max-width: 450px;
+}
+
+.pickup-image {
+    width: 380px;
+    margin-top: 25px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+/* CARD */
+
+.pickup-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.pickup-card h2 {
+    text-align: center;
+    color: #1e8c5a;
+    margin-bottom: 25px;
+}
+
+.pickup-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FORM */
+
+.pickup-card label {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.pickup-card input,
+.pickup-card select,
+.pickup-card textarea {
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.pickup-card textarea {
+    height: 90px;
+    resize: none;
+}
+
+/* DEVICE SECTION */
+
+.device-block {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+.device-row {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 70px 40px;
+    gap: 14px;
+    align-items: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SMALL QUANTITY BOX */
+
+.device-row input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+/* DELETE ICON BUTTON */
+.remove-btn {
+    background: #ff3b3b;
+    border: none;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+    height: 40px;
+    width: 39px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease;
+}
+
+/* hover effect */
+
+.remove-btn:hover {
+    background: #dc3545;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* ADD DEVICE BUTTON */
+
+.add-device-btn {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-device-btn:hover {
+    background: #0b5ed7;
+}
+
+/* IMAGE PREVIEW */
+
+.image-preview {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.image-preview img {
+    width: 80px;
+    border-radius: 6px;
+}
+
+/* SUBMIT BUTTON */
+
+.pickup-card button[type="submit"] {
+    margin-top: 20px;
+    background: #1e8c5a;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pickup-card button[type="submit"]:hover {
+    background: #157347;
+}
+
+.device-row {
+    display: grid;
+    grid-template-columns: 2fr 1.4fr 70px 40px;
+    gap: 12px;
+    align-items: end;
+}
+
+/* IMAGE PREVIEW WITH DELETE */
+
+.image-preview {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box img {
+    width: 90px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* DELETE ICON ON IMAGE */
+
+.remove-image {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+
+    background: #ff3b3b;
+    color: white;
+
+    border: none;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-image:hover {
+    background: #d92a2a;
+}
+
+/* CENTER FORM */
+
+.pickup-wrapper.single {
+    display: flex;
+    justify-content: center;
+}
+
+.pickup-wrapper.single .pickup-card {
+    width: 600px;
+}
+
+@media (max-width:768px){
+
+  /* ===== MAIN LAYOUT ===== */
+
+  .pickup-wrapper{
+    display:flex;
+    flex-direction:column;
+    width:95%;
+    gap:20px;
+  }
+
+  .pickup-card{
+    width:100%;
+    padding:20px;
+  }
+
+  /* ===== DEVICE SECTION ===== */
+
+  .device-row{
+    grid-template-columns:1fr;   /* stack all fields */
+    gap:10px;
+  }
+
+  .device-block{
+    padding-bottom:12px;
+    margin-bottom:12px;
+  }
+
+  /* ===== BUTTONS ===== */
+
+  .add-device-btn{
+    width:100%;
+  }
+
+  .remove-btn{
+    width:100%;
+    border-radius:8px;
+    height:35px;
+    font-size:14px;
+  }
+
+  /* ===== INPUTS ===== */
+
+  .pickup-card input,
+  .pickup-card select,
+  .pickup-card textarea{
+    font-size:14px;
+  }
+
+  /* ===== IMAGE PREVIEW ===== */
+
+  .image-box img{
+    width:70px;
+    height:60px;
+  }
+
+  /* ===== TEXT ===== */
+
+  .pickup-left h1{
+    font-size:26px;
+    text-align:center;
+  }
+
+  .pickup-left p{
+    text-align:center;
+  }
+
+}

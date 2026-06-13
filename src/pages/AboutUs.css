@@ -1,0 +1,113 @@
+.about-page{
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f9f7;
+}
+
+
+/* HERO */
+
+.about-hero{
+text-align:center;
+padding:80px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.about-hero h1{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.about-hero p{
+font-size:18px;
+color:#555;
+line-height:1.6;
+}
+
+
+/* MISSION */
+
+.mission-section{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:60px 20px;
+flex-wrap:wrap;
+}
+
+.mission-card{
+background:white;
+padding:35px;
+width:350px;
+border-radius:10px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.mission-card h2{
+color:#1b7a5c;
+margin-bottom:10px;
+}
+
+
+/* WHY SECTION */
+
+.why-section{
+padding:70px 20px;
+text-align:center;
+}
+
+.why-section h2{
+color:#1b7a5c;
+margin-bottom:40px;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+max-width:1000px;
+margin:auto;
+}
+
+.why-card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+
+/* IMPACT */
+
+.impact-section{
+background:#e8f4ef;
+padding:70px 20px;
+text-align:center;
+}
+
+.impact-section h2{
+color:#1b7a5c;
+margin-bottom:40px;
+}
+
+.impact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:30px;
+max-width:900px;
+margin:auto;
+}
+
+.impact-card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+.impact-card h3{
+color:#1b7a5c;
+font-size:28px;
+margin-bottom:5px;
+}

@@ -1,0 +1,240 @@
+.track-page{
+background:#f4fbf8;
+min-height:100vh;
+padding-bottom:40px;
+}
+
+.track-title{
+text-align:center;
+margin:40px 0;
+color:#1e8c5a;
+font-size:34px;
+font-weight:700;
+}
+
+/* MAIN LAYOUT */
+
+.track-container{
+display:flex;
+gap:30px;
+width:90%;
+margin:auto;
+align-items:flex-start;
+}
+
+/* LEFT SIDE */
+
+.request-list{
+width:28%;
+background:white;
+padding:20px;
+border-radius:14px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.request-list h3{
+margin-bottom:15px;
+color:#1e8c5a;
+}
+
+/* REQUEST CARD */
+
+.request-card{
+padding:15px;
+border-radius:10px;
+margin-bottom:12px;
+cursor:pointer;
+border:1px solid #eee;
+transition:0.2s;
+}
+
+.request-card:hover{
+background:#f7fbf9;
+transform:scale(1.02);
+}
+
+.request-card.active{
+border:2px solid #1e8c5a;
+background:#eefaf5;
+}
+
+.request-card h4{
+font-size:14px;
+margin-bottom:6px;
+}
+
+.mini-info{
+display:flex;
+justify-content:space-between;
+font-size:12px;
+color:#666;
+margin-bottom:5px;
+}
+
+.status-badge{
+font-size:12px;
+font-weight:600;
+color:#1e8c5a;
+}
+
+
+/* RIGHT SIDE */
+
+.track-details{
+flex:1;
+}
+
+/* DETAILS CARD */
+
+.details-card{
+background:white;
+padding:28px;
+border-radius:14px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.details-card h2{
+color:#1e8c5a;
+margin-bottom:18px;
+}
+
+/* PICKUP GRID */
+
+.pickup-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+margin-bottom:30px;
+}
+
+.pickup-grid span{
+font-size:12px;
+color:#777;
+display:block;
+margin-bottom:3px;
+}
+
+.pickup-grid p{
+font-size:14px;
+font-weight:500;
+margin:0;
+}
+
+.pickup-grid .full{
+grid-column:1 / span 2;
+}
+
+/* TIMELINE */
+
+.timeline-title{
+margin-top:10px;
+margin-bottom:20px;
+color:#1e8c5a;
+}
+
+.timeline{
+display:flex;
+justify-content:space-between;
+position:relative;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+top:10px;
+left:0;
+right:0;
+height:3px;
+background:#ddd;
+z-index:0;
+}
+
+/* STEP */
+
+.timeline-step{
+text-align:center;
+flex:1;
+position:relative;
+z-index:1;
+}
+
+.circle{
+width:22px;
+height:22px;
+border-radius:50%;
+background:#ddd;
+margin:auto;
+border:3px solid white;
+}
+
+.timeline-step.active .circle{
+background:#1e8c5a;
+}
+
+.timeline-step p{
+margin-top:10px;
+font-size:12px;
+color:#555;
+}
+
+/* EMPTY */
+
+.empty-track{
+text-align:center;
+margin-top:100px;
+color:#777;
+}
+
+@media (max-width:768px){
+
+  /* MAIN CONTAINER → STACK */
+  .track-container{
+    flex-direction:column;
+    width:95%;
+    gap:20px;
+  }
+
+  /* LEFT PANEL FULL WIDTH */
+  .request-list{
+    width:100%;
+    display:flex;
+    overflow-x:auto;
+    gap:12px;
+  }
+
+  /* REQUEST CARDS HORIZONTAL */
+  .request-card{
+    min-width:200px;
+    flex-shrink:0;
+  }
+
+  /* RIGHT SIDE FULL WIDTH */
+  .track-details{
+    width:100%;
+  }
+
+  /* DETAILS CARD */
+  .details-card{
+    padding:20px;
+  }
+
+  /* GRID → SINGLE COLUMN */
+  .pickup-grid{
+    grid-template-columns:1fr;
+  }
+
+  .pickup-grid .full{
+    grid-column:auto;
+  }
+
+  /* TIMELINE SCROLL FIX */
+  .timeline{
+    overflow-x:auto;
+    gap:20px;
+  }
+
+  .timeline-step{
+    min-width:90px;
+  }
+
+}

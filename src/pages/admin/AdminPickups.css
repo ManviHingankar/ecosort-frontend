@@ -1,0 +1,115 @@
+.admin-pickups{
+  width:90%;
+  margin:40px auto;
+}
+
+.admin-pickups h1{
+  text-align:center;
+  margin-bottom:30px;
+  font-size:32px;
+  font-weight:600;
+  color:#2c3e50;
+}
+
+/* WRAPPER (IMPORTANT FIX) */
+.table-wrapper{
+  overflow-x:auto;
+}
+
+/* TABLE */
+
+.pickup-table{
+  width:100%;
+  border-collapse:collapse;
+  background:#ffffff;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+
+.pickup-table thead{
+  background:#1e7d4f;
+  color:white;
+}
+
+.pickup-table th{
+  padding:14px;
+  font-weight:600;
+  text-align:left;
+  font-size:14px;
+}
+
+/* ROWS */
+
+.pickup-table td{
+  padding:12px 14px;
+  border-bottom:1px solid #f0f0f0;
+  font-size:13px;
+}
+
+/* ALTERNATE ROW */
+
+.pickup-table tbody tr:nth-child(even){
+  background:#f7f7f7;
+}
+
+.pickup-table tbody tr:hover{
+  background:#eef7f1;
+  transition:0.2s;
+}
+
+/* 🔥 DATE FIX (IMPORTANT) */
+
+.pickup-table td:nth-child(4),
+.pickup-table th:nth-child(4){
+  white-space: nowrap;
+  min-width:110px;
+}
+
+/* STATUS */
+
+.status-completed{
+  color:#1e7d4f;
+  font-weight:600;
+}
+
+.status-assigned{
+  color:#2980b9;
+  font-weight:600;
+}
+
+.status-pending{
+  color:#e67e22;
+  font-weight:600;
+}
+
+/* EMPTY */
+
+.no-data{
+  text-align:center;
+  padding:20px;
+  color:#777;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+  .admin-pickups{
+    width:95%;
+    margin:20px auto;
+  }
+
+  .admin-pickups h1{
+    font-size:24px;
+  }
+
+  .pickup-table th,
+  .pickup-table td{
+    padding:10px;
+    font-size:12px;
+  }
+
+}

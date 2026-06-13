@@ -1,0 +1,84 @@
+body{
+overflow-x:hidden;
+}
+
+.earnings-page{
+background:#f4fbf8;
+min-height:100vh;
+padding:60px 20px;
+}
+
+/* TITLE */
+
+.earn-title{
+text-align:center;
+margin-bottom:50px;
+color:#1e8c5a;
+font-size:34px;
+font-weight:700;
+}
+
+/* GRID */
+
+.earn-summary{
+max-width:1000px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+justify-content:center;
+}
+
+/* CARD */
+
+.earn-card{
+background:white;
+padding:30px 20px;
+border-radius:16px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:all 0.3s ease;
+}
+
+/* HOVER */
+
+.earn-card:hover{
+transform:translateY(-5px);
+box-shadow:0 18px 35px rgba(0,0,0,0.12);
+}
+
+/* TITLE */
+
+.earn-card h3{
+font-size:18px;
+color:#1e8c5a;
+font-weight:600;
+margin-bottom:12px;
+}
+
+/* VALUE */
+
+.earn-card p{
+font-size:28px;
+font-weight:700;
+color:#333;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.earn-summary{
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+}
+
+@media(max-width:500px){
+
+.earn-summary{
+grid-template-columns:1fr;
+}
+
+}

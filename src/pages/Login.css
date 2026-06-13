@@ -1,0 +1,205 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f6f9f8, #eaf4f1);
+  padding-top: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-content {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  /* IMPORTANT */
+}
+
+.left-info {
+  max-width: 420px;
+}
+
+.left-info h1 {
+  font-size: 48px;
+  color: #138a63;
+  margin-bottom: 20px;
+}
+
+.left-info p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.eco-image {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* LOGIN CARD */
+
+.login-container {
+  background: white;
+  padding: 40px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #138a63;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-container input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #138a63;
+}
+
+/* PASSWORD FIELD */
+
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-field input {
+  width: 100%;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* BUTTON */
+
+.login-container button {
+  background: #138a63;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  background: #0f6f50;
+}
+
+/* DIVIDER */
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.divider span {
+  margin: 0 10px;
+  font-size: 13px;
+  color: #777;
+  white-space: nowrap;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* GOOGLE BUTTON */
+
+.google-btn {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  background: white;
+}
+
+.google-btn img {
+  width: 18px;
+}
+
+/* FORGOT PASSWORD */
+
+.forgot {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #138a63;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: none;
+}
+
+/* SIGNUP */
+
+.signup-switch {
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-switch a {
+  color: #138a63;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+  .login-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-info {
+    display: none;
+    /* remove left side */
+  }
+
+  .login-container {
+    min-width: 100%;
+  }
+}
