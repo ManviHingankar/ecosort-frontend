@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import RecyclerNavbar from "../../components/RecyclerNavbar";
 import "./PickupRequests.css";
+
+const BASE_URL = "http://192.168.1.106:8080";
 
 function PickupRequests(){
 
@@ -10,13 +12,7 @@ const [loading,setLoading] = useState(true);
 const recyclerEmail = localStorage.getItem("userEmail");
 const recyclerName = localStorage.getItem("userName");
 
-const BASE_URL = "http://192.168.1.106:8080";
-
-useEffect(()=>{
-fetchRequests();
-},[]);
-
-const fetchRequests = ()=>{
+const fetchRequests = useCallback(()=>{
 
 fetch(`${BASE_URL}/api/recycler/area-pickups?email=${recyclerEmail}`)
 .then(res=>res.json())
@@ -28,7 +24,11 @@ setLoading(false);
 setLoading(false);
 });
 
-};
+},[recyclerEmail]);
+
+useEffect(()=>{
+fetchRequests();
+},[fetchRequests]);
 
 const acceptPickup = (id)=>{
 

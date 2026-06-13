@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import RecyclerNavbar from "../../components/RecyclerNavbar";
 import "./MyPickups.css";
 
+const BASE_URL = "http://192.168.1.106:8080";
+
 function MyPickups(){
 
 const [pickups,setPickups] = useState([]);
 
 const recyclerEmail = localStorage.getItem("userEmail");
-
-// ✅ FIX
-const BASE_URL = "http://192.168.1.106:8080";
 
 useEffect(()=>{
 
@@ -19,7 +18,7 @@ fetch(`${BASE_URL}/api/recycler/mypickups?email=${recyclerEmail}`)
 setPickups(Array.isArray(data)?data:[]);
 });
 
-},[]);
+},[recyclerEmail]);
 
 const updateStatus = async(id,newStatus)=>{
 
