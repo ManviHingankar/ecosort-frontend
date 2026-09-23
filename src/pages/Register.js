@@ -61,14 +61,14 @@ role: formData.role
 }
 );
 
-alert(response.data);
+alert(response.data?.message || response.data || "User Registered Successfully");
 
 }catch(error){
 
 console.error(error);
 
 if(error.response){
-alert(error.response.data);
+alert(error.response.data?.message || error.response.data || "Registration failed. Please try again.");
 }else{
 alert("Registration failed. Please try again.");
 }
