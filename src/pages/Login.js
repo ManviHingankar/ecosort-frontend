@@ -31,8 +31,8 @@ function Login() {
 
       const BASE_URL =
         window.location.hostname === "localhost"
-          ? "http://localhost:8080"
-          : "http://192.168.1.106:8080";
+          ? "https://ecosort-backend-qf67.onrender.com"
+          : "https://ecosort-backend-qf67.onrender.com";
 
       const response = await fetch(`${BASE_URL}/api/auth/login`, {
         method: "POST",

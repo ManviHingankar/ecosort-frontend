@@ -6,7 +6,7 @@ function AdminPickups(){
 
 const [pickups,setPickups] = useState([]);
 
-const BASE_URL = "http://192.168.1.106:8080"; // ✅ FIX
+const BASE_URL = "https://ecosort-backend-qf67.onrender.com"; // ✅ FIX
 
 useEffect(()=>{
 

@@ -12,14 +12,14 @@ useEffect(()=>{
 const email = localStorage.getItem("userEmail");
 
 /* fetch user eco points */
-fetch(`http://localhost:8080/api/user/${email}`)
+fetch(`https://ecosort-backend-qf67.onrender.com/api/user/${email}`)
 .then(res=>res.json())
 .then(data=>{
 setPoints(data.greenPoints || 0);
 });
 
 /* fetch pickup requests */
-fetch(`http://localhost:8080/api/pickup/my-requests/${email}`)
+fetch(`https://ecosort-backend-qf67.onrender.com/api/pickup/my-requests/${email}`)
 .then(res=>res.json())
 .then(data=>{
 setRequests(data);

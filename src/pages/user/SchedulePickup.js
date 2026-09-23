@@ -61,7 +61,7 @@ setLoading(true);   // ✅ START LOADING
 
 try{
 
-const BASE_URL = "http://192.168.1.106:8080";
+const BASE_URL = "https://ecosort-backend-qf67.onrender.com";
 
 await fetch(`${BASE_URL}/api/pickup/request`,{
 method:"POST",

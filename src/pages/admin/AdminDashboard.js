@@ -8,7 +8,7 @@ const [stats,setStats] = useState({});
 const [pendingRecyclers,setPendingRecyclers] = useState([]);
 const [recentPickups,setRecentPickups] = useState([]);
 
-const BASE_URL = "http://192.168.1.106:8080"; // ✅ CHANGE THIS
+const BASE_URL = "https://ecosort-backend-qf67.onrender.com"; // ✅ CHANGE THIS
 
 useEffect(()=>{
 

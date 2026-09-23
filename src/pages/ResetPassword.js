@@ -15,7 +15,7 @@ e.preventDefault();
 try{
 
 await fetch(
-`http://localhost:8080/api/auth/reset-password?email=${email}&newPassword=${password}`,
+`https://ecosort-backend-qf67.onrender.com/api/auth/reset-password?email=${email}&newPassword=${password}`,
 {
 method:"POST"
 }

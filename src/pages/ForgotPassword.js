@@ -19,7 +19,7 @@ return;
 try{
 
 const response = await fetch(
-`http://localhost:8080/api/auth/forgot-password?email=${email}`,
+`https://ecosort-backend-qf67.onrender.com/api/auth/forgot-password?email=${email}`,
 {
 method:"POST"
 }

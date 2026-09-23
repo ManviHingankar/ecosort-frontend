@@ -14,7 +14,7 @@ function UserDashboard(){
   const [recent,setRecent] = useState([]);
 
   // ✅ BASE URL (FIXED FOR MOBILE)
-  const BASE_URL = "http://192.168.1.106:8080";
+  const BASE_URL = "https://ecosort-backend-qf67.onrender.com";
 
   useEffect(()=>{
 

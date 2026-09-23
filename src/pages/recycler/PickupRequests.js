@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import RecyclerNavbar from "../../components/RecyclerNavbar";
 import "./PickupRequests.css";
 
-const BASE_URL = "http://192.168.1.106:8080";
+const BASE_URL = "https://ecosort-backend-qf67.onrender.com";
 
 function PickupRequests(){
 

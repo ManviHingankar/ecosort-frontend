@@ -10,7 +10,7 @@ const recyclerEmail = localStorage.getItem("userEmail");
 
 useEffect(()=>{
 
-fetch(`http://localhost:8080/api/pickup/recycler/my?email=${recyclerEmail}`)
+fetch(`https://ecosort-backend-qf67.onrender.com/api/pickup/recycler/my?email=${recyclerEmail}`)
 .then(res=>res.json())
 .then(data=>{
 

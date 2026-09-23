@@ -8,7 +8,7 @@ function TrackPickup(){
   const [selected,setSelected] = useState(null);
 
   // ✅ FIXED BASE URL (for mobile)
-  const BASE_URL = "http://192.168.1.106:8080";
+  const BASE_URL = "https://ecosort-backend-qf67.onrender.com";
 
   useEffect(()=>{
 

@@ -13,7 +13,7 @@ const [co2,setCo2] = useState(null);
 const [error,setError] = useState("");
 
 // ✅ BASE URL FIX (IMPORTANT)
-const BASE_URL = "http://192.168.1.106:8080";
+const BASE_URL = "https://ecosort-backend-qf67.onrender.com";
 
 const handleEstimate = async (e) => {
 

@@ -8,7 +8,7 @@ function MyRequests() {
 
   const email = localStorage.getItem("userEmail");
 
-  const BASE_URL = "http://192.168.1.106:8080";
+  const BASE_URL = "https://ecosort-backend-qf67.onrender.com";
   useEffect(() => {
     fetch(`${BASE_URL}/api/pickup/my-requests/${email}`)
       .then((res) => res.json())

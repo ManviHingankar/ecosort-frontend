@@ -5,7 +5,7 @@ import RecyclerNavbar from "../../components/RecyclerNavbar";
 function MyEarnings(){
 
 const [earnings,setEarnings] = useState([]);
-const BASE_URL = "http://192.168.1.106:8080";
+const BASE_URL = "https://ecosort-backend-qf67.onrender.com";
 
 useEffect(()=>{
 

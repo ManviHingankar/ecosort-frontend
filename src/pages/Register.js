@@ -52,7 +52,7 @@ return;
 try{
 
 const response = await axios.post(
-"http://localhost:8080/api/auth/register",
+"https://ecosort-backend-qf67.onrender.com/api/auth/register",
 {
 name: formData.name,
 email: formData.email,

@@ -10,7 +10,7 @@ const [co2,setCo2] = useState(0);
 const [trees,setTrees] = useState(0);
 
 // ✅ BASE URL FIX
-const BASE_URL = "http://192.168.1.106:8080";
+const BASE_URL = "https://ecosort-backend-qf67.onrender.com";
 
 useEffect(()=>{
 

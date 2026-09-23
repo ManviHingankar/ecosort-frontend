@@ -7,7 +7,7 @@ function Profile() {
 const userEmail = localStorage.getItem("userEmail");
 
 // ✅ BASE URL FIX
-const BASE_URL = "http://192.168.1.106:8080";
+const BASE_URL = "https://ecosort-backend-qf67.onrender.com";
 
 const [editMode,setEditMode] = useState(false);
 const [loading,setLoading] = useState(true);

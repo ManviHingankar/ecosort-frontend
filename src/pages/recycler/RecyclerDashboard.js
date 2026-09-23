@@ -10,7 +10,7 @@ const [completedCount,setCompletedCount] = useState(0);
 const [earnings,setEarnings] = useState(0);
 
 // ✅ IMPORTANT (USE IP NOT LOCALHOST)
-const BASE_URL = "http://192.168.1.106:8080";
+const BASE_URL = "https://ecosort-backend-qf67.onrender.com";
 
 useEffect(() => {
 

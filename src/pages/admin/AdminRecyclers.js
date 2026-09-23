@@ -7,7 +7,7 @@ function AdminRecyclers(){
 const [recyclers,setRecyclers] = useState([]);
 const [selectedArea,setSelectedArea] = useState({});
 
-const BASE_URL = "http://192.168.1.106:8080"; // ✅ FIX
+const BASE_URL = "https://ecosort-backend-qf67.onrender.com"; // ✅ FIX
 
 const areas = [
 "Alandi","Baner","Bhosari","Chikhali","Chinchwad",
